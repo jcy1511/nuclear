@@ -21,12 +21,12 @@
         .content {
             border: 2px solid black;
             width: 80vw;
-            height: 160px;
             padding: 15px;
             margin: 0 auto;
             margin-bottom: 20px;
             border-radius: 15px;
             display: flex;
+            flex-direction: column;
         }
 
         a {
@@ -42,30 +42,36 @@
     <br />
     <div class="body">
         <div class="content">
-            <div style="float: left; margin: auto;">
+            {% load static %}
+            <img style="width:100%; margin: auto;"
+                src="https://mblogthumb-phinf.pstatic.net/MjAyMDA1MzFfODcg/MDAxNTkwOTI0MTY3NTEz.kk304YMXKXxFX2TU62FRch4PAuT4Z9InHO6F0Hlf9DIg.fI_lFMb-4jPsaQiFqPUIoI5YgVY9FFuMTEcJeztWRBMg.JPEG.rara4000/99E819435E994D8B16.jpg?type=w800" />
+
+            <div style="text-align: left;">
                 <a href="{% url 's1' %}">
                     <h2>simulation1</h2>
                 </a>
                 <p>description of simulation1</p>
-                <br />
             </div>
-            {% load static %}
-            <img style="width:150px; height:150px; float: right; margin: auto;" src="{% static 'khs.jpg' %}" />
         </div>
 
         <div class="content">
-            <div style="float: left; margin: auto;">
+            {% load static %}
+            <img style="width:100%; margin: auto;"
+                src="https://mblogthumb-phinf.pstatic.net/MjAyMDA1MzFfODcg/MDAxNTkwOTI0MTY3NTEz.kk304YMXKXxFX2TU62FRch4PAuT4Z9InHO6F0Hlf9DIg.fI_lFMb-4jPsaQiFqPUIoI5YgVY9FFuMTEcJeztWRBMg.JPEG.rara4000/99E819435E994D8B16.jpg?type=w800" />
+
+            <div style="text-align: left;">
                 <a href="{% url 's1' %}">
                     <h2>simulation2</h2>
                 </a>
                 <p>description of simulation2</p>
-                <br />
             </div>
-            <img style="width:150px; height:150px; float: right; margin: auto;" src="{% static 'khs.jpg' %}" />
         </div>
 
     </div>
+
+
     <div style="text-align: center;">
+        <br /><br /><br /><br /><br />
         <h5>ⓒ 2022. 장찬영 all rights reserved.</h5>
     </div>
 
