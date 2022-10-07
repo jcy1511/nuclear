@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .body {
+            height: 100vh;
+            /* background-color: antiquewhite; */
+            padding: 10px;
+            align-content: center;
+        }
+
+        .content {
+            border: 2px solid black;
+            width: 80vw;
+            height: 160px;
+            padding: 15px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>서준이의 원소마스터 세상</h1>
+    <br />
+    <div class="body">
+        <div class="content">
+            <div style="float: left; margin: auto;">
+                <a href="{% url 's1' %}">
+                    <h2>simulation1</h2>
+                </a>
+                <p>description of simulation1</p>
+                <br />
+            </div>
+            {% load static %}
+            <img style="width:150px; height:150px; float: right; margin: auto;" src="{% static 'khs.jpg' %}" />
+        </div>
+
+        <div class="content">
+            <div style="float: left; margin: auto;">
+                <a href="{% url 's1' %}">
+                    <h2>simulation2</h2>
+                </a>
+                <p>description of simulation2</p>
+                <br />
+            </div>
+            <img style="width:150px; height:150px; float: right; margin: auto;" src="{% static 'khs.jpg' %}" />
+        </div>
+
+    </div>
+    <div style="text-align: center;">
+        <h5>ⓒ 2022. 장찬영 all rights reserved.</h5>
+    </div>
+
+</body>
+
+</html>
