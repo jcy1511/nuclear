@@ -3,7 +3,19 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-image: linear-gradient(
+    to top,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
   font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -12,9 +24,9 @@ body {
   align-items: center;
   color: black;
   padding: 80px 0;
-  /* position: sticky;
-  top: 0;
-  background-color: aqua; */
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .body {
@@ -26,15 +38,20 @@ body {
 }
 
 .content {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: 75vw;
-  padding: 15px;
+  /* padding: 15px; */
   margin: 0 auto;
-  margin-bottom: 30px;
-  border-radius: 10px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  height: 60vw;
   display: flex;
+  position: relative;
   flex-direction: column;
+  align-items: center;
   background-color: white;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
 }
 
 a {
@@ -47,9 +64,32 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  border-radius: 10px;
-  border: 1px solid gray;
+.content img {
+  border-radius: 20px;
+  /* border: 1px solid gray; */
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 90%;
+  top: -30px;
+  transition: 0.5s;
+}
+
+.content:hover img {
+  width: 105%;
+}
+.content:hover {
+  transform: scale(110%);
+}
+.content:hover .preview {
+  margin-top: 20px;
+}
+
+.content .preview {
+  display: flex;
+  height: 55%;
+  text-align: center;
+  padding: 0 15px 15px;
+  transition: 0.5s;
 }
 
 @media (min-width: 768px) {
@@ -60,6 +100,13 @@ img {
 
   .content {
     width: 38vw;
+    height: 30vw;
     max-width: 436px;
+    max-height: 344px;
   }
+}
+
+footer {
+  color: white;
+  text-align: center;
 }
