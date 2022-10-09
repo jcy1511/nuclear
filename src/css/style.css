@@ -15,12 +15,15 @@ body {
   /* font-family: "Nanum Gothic", sans-serif; */
   font-family: "AppleSDGothicNeoR";
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .titlebar {
   margin: 0 auto;
   align-items: center;
-  color: black;
+  color: white;
+  top: 0px;
   padding: 80px 0;
   background-color: white;
   border-radius: 20px;
@@ -58,7 +61,7 @@ a {
 }
 
 a:hover {
-  color: #cc6b8e;
+  color: #3c31dd;
   text-decoration: underline;
 }
 
@@ -123,4 +126,50 @@ footer a {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  padding-top: 100px;
+  background: #3c31dd;
+  color: white;
+}
+
+section h1 {
+  font-size: 30px;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: white;
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #3c31dd;
+  transform: translate(-4%, 40%);
+  z-index: -1;
 }
