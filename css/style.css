@@ -141,3 +141,10 @@ section h1 {
   font-size: 40px;
   position: fixed;
 }
+
+#polygon {
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
