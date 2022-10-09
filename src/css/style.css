@@ -121,8 +121,6 @@ footer a {
   width: 36px;
   height: 36px;
   position: absolute;
-  background-image: url("/src/img/home.png");
-  background-size: cover;
   top: 10px;
   right: 10px;
   cursor: pointer;
