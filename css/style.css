@@ -8,16 +8,14 @@
 .title {
   text-align: center;
 }
-html {
-  width: 100vw;
-  box-sizing:border-box;
-}
+
 body {
   /* background-color: #f0f0f0; */
   background-color: white;
   /* font-family: "Nanum Gothic", sans-serif; */
   font-family: "AppleSDGothicNeoR";
   width: 100vw;
+  box-sizing:border-box;
   height: 100%;
   margin: 0;
   padding: 0;
