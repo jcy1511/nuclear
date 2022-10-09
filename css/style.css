@@ -23,12 +23,13 @@ body {
   margin-bottom: 30px;
 }
 
-.body {
+.main-body {
   /* background-color: antiquewhite; */
   padding: 10px;
   justify-items: center;
   max-width: 1024px;
   margin: 0 auto;
+  /* background-color: aqua; */
 }
 
 .content {
@@ -93,7 +94,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .body {
+  .main-body {
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -109,6 +110,7 @@ a:hover {
 footer {
   color: black;
   text-align: center;
+  width: 100%;
 }
 
 footer a {
