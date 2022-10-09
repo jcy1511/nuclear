@@ -79,6 +79,26 @@ a:hover {
 .content:hover img {
   width: 105%;
 }
+
+.content .img {
+  border-radius: 20px;
+  /* border: 1px solid gray; */
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  top: -30px;
+  transition: 0.5s;
+  cursor: pointer;
+  background-size: cover;
+  text-align: center;
+}
+
+.content:hover .img {
+  width: 105%;
+  height: 70%;
+}
+
 .content:hover {
   transform: scale(110%);
 }
