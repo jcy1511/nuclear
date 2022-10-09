@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
 .title {
   text-align: center;
 }
@@ -16,7 +18,7 @@ body {
     #f3a469 87%,
     #f7c978 100%
   );
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   height: 100%;
 }
 
@@ -83,7 +85,7 @@ a:hover {
   transform: scale(110%);
 }
 .content:hover .preview {
-  margin-top: 20px;
+  margin-top: 110px;
 }
 
 .content .preview {
@@ -111,6 +113,10 @@ a:hover {
 footer {
   color: white;
   text-align: center;
+}
+
+footer a {
+  color: white;
 }
 
 #home {
