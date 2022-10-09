@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-  color: darkcyan;
+  color: #cc6b8e;
   text-decoration: underline;
 }
 
@@ -73,6 +73,7 @@ a:hover {
   width: 90%;
   top: -30px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .content:hover img {
