@@ -8,17 +8,14 @@
 .title {
   text-align: center;
 }
-
 body {
   /* background-color: #f0f0f0; */
-  background-color: white;
+  /* background-color: red; */
   /* font-family: "Nanum Gothic", sans-serif; */
   font-family: "AppleSDGothicNeoR";
   width: 100vw;
-  box-sizing:border-box;
   height: 100%;
   margin: 0;
-  padding: 0;
 }
 
 .titlebar {
@@ -32,10 +29,14 @@ body {
   margin-bottom: 30px;
 }
 
+.header {
+  position: relative;
+}
+
 .body {
   /* background-color: antiquewhite; */
   padding: 10px;
-  align-content: center;
+  justify-items: center;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -147,36 +148,4 @@ section {
 section h1 {
   font-size: 40px;
   position: fixed;
-}
-
-.curve {
-  position: absolute;
-  height: 20vw;
-  max-height: 200px;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-
-.curve::before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: white;
-}
-
-.curve::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: #3c31dd;
-  transform: translate(-4%, 40%);
-  z-index: -1;
 }
