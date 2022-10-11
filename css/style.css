@@ -8,6 +8,7 @@
 .title {
   text-align: center;
 }
+
 body {
   /* background-color: #f0f0f0; */
   /* background-color: red; */
@@ -21,6 +22,12 @@ body {
 .header {
   position: relative;
   margin-bottom: 30px;
+}
+
+#wave {
+  width: 100vw;
+  height: 10vw;
+  background-image: url('../img/wavesOpacity.svg');
 }
 
 .main-body {
@@ -81,6 +88,7 @@ a:hover {
 .content:hover {
   transform: scale(110%);
 }
+
 .content:hover .preview {
   margin-top: 110px;
 }
@@ -124,6 +132,14 @@ footer a {
   top: 10px;
   right: 10px;
   cursor: pointer;
+  background-image: url('../img/icons/home.svg');
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+}
+
+#home:hover {
+  background-image: url('../img/icons/home_filled.svg');
 }
 
 section {
