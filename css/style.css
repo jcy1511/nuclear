@@ -44,9 +44,9 @@ body {
   width: 75vw;
   /* padding: 15px; */
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   border-radius: 20px;
-  height: 60vw;
+  height: 70vw;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -81,8 +81,8 @@ a:hover {
 }
 
 .content:hover .img {
-  width: 105%;
-  height: 70%;
+  width: 102%;
+  height: 67%;
 }
 
 .content:hover {
@@ -90,14 +90,14 @@ a:hover {
 }
 
 .content:hover .preview {
-  margin-top: 110px;
+  margin-top: 20%;
 }
 
 .content .preview {
   display: flex;
   height: 55%;
   text-align: center;
-  padding: 0 15px 15px;
+  padding: 0 30px 15px;
   transition: 0.5s;
 }
 
@@ -109,9 +109,9 @@ a:hover {
 
   .content {
     width: 38vw;
-    height: 30vw;
+    height: 36vw;
     max-width: 436px;
-    max-height: 344px;
+    max-height: 430px;
   }
 }
 
