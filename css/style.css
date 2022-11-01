@@ -86,7 +86,7 @@ a:hover {
 }
 
 .content:hover {
-  transform: scale(110%);
+  transform: scale(105%);
 }
 
 .content:hover .preview {
