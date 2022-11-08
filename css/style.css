@@ -7,6 +7,7 @@
 
 .title {
   text-align: center;
+  pointer-events: none;
 }
 
 body {
@@ -78,6 +79,7 @@ a:hover {
   cursor: pointer;
   background-size: cover;
   text-align: center;
+  background-position: center; 
 }
 
 .content:hover .img {
