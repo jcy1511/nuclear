@@ -28,7 +28,7 @@ body {
 #wave {
   width: 100vw;
   height: 10vw;
-  background-image: url('../img/wavesOpacity.svg');
+  background-image: url("../img/wavesOpacity.svg");
 }
 
 .main-body {
@@ -79,7 +79,7 @@ a:hover {
   cursor: pointer;
   background-size: cover;
   text-align: center;
-  background-position: center; 
+  background-position: center;
 }
 
 .content:hover .img {
@@ -135,14 +135,14 @@ footer a {
   top: 10px;
   right: 10px;
   cursor: pointer;
-  background-image: url('../img/icons/home.svg');
+  background-image: url("../img/icons/home.svg");
   background-size: cover;
   border: 0;
   background-color: transparent;
 }
 
 #home:hover {
-  background-image: url('../img/icons/home_filled.svg');
+  background-image: url("../img/icons/home_filled.svg");
 }
 
 section {
@@ -166,4 +166,15 @@ section h1 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.s1_body {
+  padding: 0px;
+  align-content: center;
+  width: 90vw;
+  max-width: 1024px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
 }
