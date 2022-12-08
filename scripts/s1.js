@@ -14,14 +14,22 @@ let by = 260;
 let bsizeX = 40;
 let bsizeY = 40;
 
-ctx.fillStyle = "red";
-ctx.fillRect(rx, ry, rsizeX, rsizeY);
-
-ctx.fillStyle = "blue";
-for (i = 0; i < 3; i++) {
-  ctx.fillRect(bx, by + 80 * i, bsizeX, bsizeY);
+function draw() {
+  ctx.drawImage(img, rx, ry, rsizeX, rsizeY);
+  ctx.fillStyle = "blue";
+  for (i = 0; i < 3; i++) {
+    ctx.fillRect(bx, by + 80 * i, bsizeX, bsizeY);
+  }
 }
-
+var img = new Image();
+img.onload = function () {
+  ctx.drawImage(img, rx, ry, rsizeX, rsizeY);
+  ctx.fillStyle = "blue";
+  for (i = 0; i < 3; i++) {
+    ctx.fillRect(bx, by + 80 * i, bsizeX, bsizeY);
+  }
+};
+img.src = "/img/nuclear.jpeg";
 let attempts = 0;
 
 function startAnimate() {
@@ -37,30 +45,18 @@ function startAnimate() {
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = "red";
-  ctx.fillRect(rx, ry, rsizeX, rsizeY);
-
-  ctx.fillStyle = "blue";
-  for (i = 0; i < 3; i++) {
-    ctx.fillRect(bx, by + 80 * i, bsizeX, bsizeY);
-  }
+  draw();
 
   bx += 10;
 
   req = requestAnimationFrame(animate);
 
   if (bx >= 2000) {
-    cancelAnimationFrame(req);
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "red";
-    ctx.fillRect(rx, ry, rsizeX, rsizeY);
-
-    ctx.fillStyle = "blue";
-    for (i = 0; i < 3; i++) {
-      ctx.fillRect(360, 260 + (80 * i), bsizeX, bsizeY);
-    }
+    ctx.drawImage(img, 200, 260, rsizeX, rsizeY);
+  ctx.fillStyle = "blue";
+  for (i = 0; i < 3; i++) {
+    ctx.fillRect(360, 260 + 80 * i, bsizeX, bsizeY);
+  }
   }
 }
 
