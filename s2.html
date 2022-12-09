@@ -12,6 +12,7 @@
       margin: 0 auto;
     }
   </style>
+  <script src="scripts/s2.js" defer></script>
 </head>
 
 <body>
@@ -29,18 +30,24 @@
     <h1>핵융합</h1>
     <br />
 
-    <div style="
-          border: 2px solid black;
-          height: 50.625vw;
-          margin: 0 auto;
-          display: flex;
-          max-height: 576px;
-        ">
-      <p style="margin: auto">(대충 시뮬레이션)</p>
-    </div>
+    <canvas
+    id="canvas"
+    width="1600"
+    height="900"
+  >
+  </canvas>
+
+  <div style="display: flex; margin-top: 10px; justify-content: center;">
+    <input id="input" placeholder="결손된 질량" type="number" />
+    kg
+    <button id="animateButton">실행</button>
+  </div>
+
+  <div style="display: flex; margin-top: 10px; justify-content: center;">
+    <p id="calculatedText">E =</p>
+  </div>
 
     <div id="description">
-      <p>핵융합</p>
       <p>
         핵융합은 수소와 같은 서로 다른 두 개의 원자핵이 융합하는 현상을 말한다. 핵융합이 발생하면 발생 전후 질량차이에 의해 대량의 에너지가 방출하는데, 이는 아인슈타인의 질량 에너지 등가원리(E=mc²)으로 이 양을 계산할 수 있다. 이러한 핵융합 반응은 원자핵 간의 척력을 이겨낼 만큼의 힘이 외부에서 가해져야 하므로 일반적인 환경에서는 구현하기 힘들다.
       </p>

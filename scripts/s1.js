@@ -65,7 +65,7 @@ img.src = "/img/nuclear.png";
 let attempts = 0;
 let attempts0 = 0;
 
-async function startAnimate() {
+function startAnimate() {
   attempts++;
   if (attempts > 1) {
     cancelAnimationFrame(req);
@@ -143,7 +143,10 @@ animateButton.onclick = () => {
   startAnimate();
 
   let massFloat = parseFloat(input.value);
-  calculatedText.innerText = "E = "+String((massFloat * 299792*299792).toLocaleString('en-Us'))+" J";
+  calculatedText.innerText =
+    "E = " +
+    String((massFloat * 299792 * 299792).toLocaleString("en-Us")) +
+    " J";
 };
 
 const input = document.getElementById("input");
