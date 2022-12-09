@@ -71,9 +71,6 @@ async function startAnimate() {
   attempts++;
   if (attempts > 1) {
     cancelAnimationFrame(req);
-    if (attempts0 > 1) {
-      clearTimeout(timer);
-    }
   }
   startAnimate0();
 }
@@ -136,6 +133,7 @@ function animate0() {
 
   if (bx >= 800) {
     animate();
+    cancelAnimationFrame(req0);
   } else {
     req0 = requestAnimationFrame(animate0);
   }
