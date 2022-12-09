@@ -40,7 +40,7 @@ img.onload = function () {
   }
   ctx.drawImage(img, rx, ry, rsizeX, rsizeY);
 };
-img.src = "/img/nuclear.jpeg";
+img.src = "/img/nuclear.png";
 let attempts = 0;
 
 function startAnimate() {
