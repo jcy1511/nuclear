@@ -176,7 +176,7 @@ section h1 {
 #animateButton {
   background-color: white;
   border-radius: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 #animateButton:hover {
@@ -191,6 +191,8 @@ section h1 {
 #input {
   border-radius: 10px;
   width: 90px;
+  text-align: right;
+  margin-right: 3px;
 }
 
 canvas {
@@ -204,3 +206,7 @@ canvas {
   border-radius: 10px;
 }
 
+#calculatedText {
+  font-weight: bold;
+  font-size: 20px;
+}

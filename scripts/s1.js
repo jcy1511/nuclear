@@ -31,22 +31,22 @@ function draw() {
     ctx.fill();
     ctx.closePath();
   }
-  ctx.drawImage(img, rx+20, ry + 80, rsizeX-45, rsizeY-45);
-  ctx.drawImage(img, rx+20, ry - 60, rsizeX-45, rsizeY-45);
+  ctx.drawImage(img, rx + 20, ry + 80, rsizeX - 45, rsizeY - 45);
+  ctx.drawImage(img, rx + 20, ry - 60, rsizeX - 45, rsizeY - 45);
   ctx.drawImage(energyImg, 550, 570, 500, 200);
   ctx.drawImage(energy2Img, 550, 80, 500, 200);
 }
 
 var energyImg = new Image();
-energyImg.onload = function() {
+energyImg.onload = function () {
   console.log("loaded");
-}
+};
 energyImg.src = "/img/energy.png";
 
 var energy2Img = new Image();
-energy2Img.onload = function() {
+energy2Img.onload = function () {
   console.log("loaded");
-}
+};
 energy2Img.src = "/img/energy2.png";
 
 var img = new Image();
@@ -66,11 +66,11 @@ let attempts = 0;
 let attempts0 = 0;
 
 async function startAnimate() {
-  
   attempts++;
   if (attempts > 1) {
     cancelAnimationFrame(req);
-  }bx = 860;
+  }
+  bx = 860;
   by = 370;
   startAnimate0();
 }
@@ -141,7 +141,9 @@ function animate0() {
 
 animateButton.onclick = () => {
   startAnimate();
-  calculatedText.innerText = input.value;
+
+  let massFloat = parseFloat(input.value);
+  calculatedText.innerText = "E = "+String((massFloat * 299792*299792).toLocaleString('en-Us'))+" J";
 };
 
 const input = document.getElementById("input");
