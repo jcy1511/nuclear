@@ -76,7 +76,6 @@ async function startAnimate() {
     }
   }
   startAnimate0();
-  timer = setTimeout(() => animate(), 1000);
 }
 
 function animate() {
@@ -136,13 +135,7 @@ function animate0() {
   ctx.drawImage(img, rx, ry, rsizeX, rsizeY);
 
   if (bx >= 800) {
-    ctx.fillStyle = "blue";
-    ctx.beginPath();
-    ctx.arc(initial_bx, initial_by, bsizeX, 0, Math.PI * 2);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-    ctx.drawImage(img, rx, ry, rsizeX, rsizeY);
+    animate();
   } else {
     req0 = requestAnimationFrame(animate0);
   }
