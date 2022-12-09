@@ -66,12 +66,12 @@ let attempts = 0;
 let attempts0 = 0;
 
 async function startAnimate() {
-  bx = 860;
-  by = 370;
+  
   attempts++;
   if (attempts > 1) {
     cancelAnimationFrame(req);
-  }
+  }bx = 860;
+  by = 370;
   startAnimate0();
 }
 
