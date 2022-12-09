@@ -70,12 +70,8 @@ function explode() {
 
   x += 15;
 
-  if (x >= 2000) {
+  if (x >= 1200) {
     cancelAnimationFrame(req);
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(h2Img, 200, 150, 200, 200);
-      ctx.drawImage(h3Img, 200, 550, 200, 200);
-
   } else {
     req = requestAnimationFrame(explode);
   }

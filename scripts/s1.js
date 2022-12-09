@@ -85,17 +85,8 @@ function animate() {
   bx += 15;
   by += 5;
 
-  if (bx >= 2800) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "blue";
-    for (i = 0; i < 3; i++) {
-      ctx.beginPath();
-      ctx.arc(initial_bx, initial_by, bsizeX, 0, Math.PI * 2);
-      ctx.stroke();
-      ctx.fill();
-      ctx.closePath();
-    }
-    ctx.drawImage(img, rx, ry, rsizeX, rsizeY);
+  if (bx >= 1400) {
+    cancelAnimationFrame(req);
   } else {
     req = requestAnimationFrame(animate);
   }
