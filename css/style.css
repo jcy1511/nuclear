@@ -172,3 +172,35 @@ section h1 {
   margin: 0 auto;
   max-width: 1024px;
 }
+
+#animateButton {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+#animateButton:hover {
+  background-color: black;
+  color: white;
+}
+
+#animateButton:active {
+  transform: scale(95%);
+}
+
+#input {
+  border-radius: 10px;
+  width: 90px;
+}
+
+canvas {
+  border: 2px solid black;
+  width: 90vw;
+  height: 50.625vw;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1024px;
+  max-height: 576px;
+  border-radius: 10px;
+}
+

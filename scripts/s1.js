@@ -4,13 +4,13 @@ const ctx = canvas.getContext("2d");
 
 const animateButton = document.getElementById("animateButton");
 
-let rx = 200;
-let ry = 260;
+let rx = 700;
+let ry = 330;
 let rsizeX = 200;
 let rsizeY = 200;
 
-let bx = 360;
-let by = 260;
+let bx = 860;
+let by = 330;
 let bsizeX = 40;
 let bsizeY = 40;
 
@@ -33,8 +33,8 @@ img.src = "/img/nuclear.jpeg";
 let attempts = 0;
 
 function startAnimate() {
-  bx = 360;
-  by = 260;
+  bx = 860;
+  by = 330;
   attempts++;
   if (attempts > 1) {
     cancelAnimationFrame(req);
@@ -52,12 +52,18 @@ function animate() {
   req = requestAnimationFrame(animate);
 
   if (bx >= 2000) {
-    ctx.drawImage(img, 200, 260, rsizeX, rsizeY);
-  ctx.fillStyle = "blue";
-  for (i = 0; i < 3; i++) {
-    ctx.fillRect(360, 260 + 80 * i, bsizeX, bsizeY);
-  }
+    ctx.drawImage(img, 700, 330, rsizeX, rsizeY);
+    ctx.fillStyle = "blue";
+    for (i = 0; i < 3; i++) {
+      ctx.fillRect(860, 330 + 80 * i, bsizeX, bsizeY);
+    }
   }
 }
 
-animateButton.onclick = () => startAnimate();
+animateButton.onclick = () => {
+  startAnimate();
+  calculatedText.innerText = input.value;
+};
+
+const input = document.getElementById("input");
+const calculatedText = document.getElementById("calculatedText");

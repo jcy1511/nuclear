@@ -28,22 +28,20 @@
 
       <canvas
         id="canvas"
-        style="
-          border: 2px solid black;
-          width: 90vw;
-          height: 50.625vw;
-          margin: 0 auto;
-          display: flex;
-          max-width: 1024px;
-          max-height: 576px;
-        "
         width="1600"
         height="900"
       >
       </canvas>
 
+      <div style="display: flex; margin-top: 10px; justify-content: center;">
+        <input id="input" placeholder="질량(숫자만)" type="number" />
+        <button id="animateButton">실행</button>
+      </div>
+
+      <div style="display: flex; margin-top: 10px; justify-content: center;">
+        <p id="calculatedText"></p>
+      </div>
       <div id="description">
-        <button id="animateButton">이거 테스트임</button>
         <p>
           핵분열은 원자핵이 중성자 또는 감마선 따위의 조사에 의해 많은 에너지를
           방출하면서, 거의 같은 크기의 두 개의 원자핵으로 분열하는 현상을
