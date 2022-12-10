@@ -181,25 +181,20 @@ section h1 {
   margin-left: 15px;
   width: 50px;
   height: 30px;
+  transform: scale(105%);
   transition: 0.3s;
   font-weight: bold;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#animateButton:active {
-  transform: scale(95%);
+#animateButton:hover {
+  background-color: black;
+  color: white;
+  transform: scale(100%);
 }
 
-@media (hover: hover) {
-  #animateButton {
-    transform: scale(105%);
-  }
-
-  #animateButton:hover {
-    background-color: black;
-    color: white;
-    transform: scale(100%);
-  }
+#animateButton:active {
+  transform: scale(95%);
 }
 
 input {
