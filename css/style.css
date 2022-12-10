@@ -181,7 +181,6 @@ section h1 {
   margin-left: 15px;
   width: 50px;
   height: 30px;
-  transform: scale(100%);
   transition: 0.3s;
   font-weight: bold;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
