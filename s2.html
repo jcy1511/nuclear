@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>핵융합</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #description {
+        margin: 0 auto;
+      }
+    </style>
+    <script src="scripts/s2.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>핵융합</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    #description {
-      margin: 0 auto;
-    }
-  </style>
-  <script src="scripts/s2.js" defer></script>
-</head>
-
-<body>
-  <div style="
+  <body>
+    <div
+      style="
         padding: 20px;
         align-content: center;
         max-width: 1024px;
@@ -24,62 +24,84 @@
         background-color: white;
         border-radius: 20px;
         position: relative;
-      ">
-    <!-- <img id="home" src="img/home.png" onclick="location.href='index.html'"></img> -->
-    <button onclick="location.href='index.html'" id="home"></button>
-    <h1>핵융합</h1>
-    <br />
-
-    <canvas
-    id="canvas"
-    width="1600"
-    height="900"
-  >
-  </canvas>
-
-  <div style="display: flex; margin-top: 10px; justify-content: center;">
-    <input id="input" placeholder="결손된 질량" type="number" />
-    kg
-    <button id="animateButton">실행</button>
-  </div>
-
-  <div style="display: flex; margin-top: 10px; justify-content: center;">
-    <p id="calculatedText">E =</p>
-  </div>
-
-    <div id="description">
-      <p>
-        핵융합은 수소와 같은 서로 다른 두 개의 원자핵이 융합하는 현상을 말한다. 핵융합이 발생하면 발생 전후 질량차이에 의해 대량의 에너지가 방출하는데, 이는 아인슈타인의 질량 에너지 등가원리(E=mc²)으로 이 양을 계산할 수 있다. 이러한 핵융합 반응은 원자핵 간의 척력을 이겨낼 만큼의 힘이 외부에서 가해져야 하므로 일반적인 환경에서는 구현하기 힘들다.
-      </p>
-      <p>핵융합 에너지를 얻기 위한 조건을 알아보자. 핵융합은 원자핵 간의 반응이므로 전자나 전자 구름이 거의 없는 플라스마 상태를 필요로 한다. 원자핵끼리의 반발력은 대체로 10keV 이상이므로 대략 1억도 이상의 고온이 되어야 한다. 핵융합도 핵자에 따라 필요 온도조건이 다른데, 그 중에서 가장 가능성이 높은 D-T 핵융합의 연구가 전세계적으로 활발하게 이루어지고 있다.</p>
-      <p>핵융합 장치로는 대표적으로 자기장을 이용한 장치와 관성을 이용한 핵융합 장치가 있다. 일반적으로 자기장을 이용한 핵융합 장치의 연구가 발전되어 있으며, 이를 토카막 장치라고 한다.</p>
+      "
+    >
+      <!-- <img id="home" src="img/home.png" onclick="location.href='index.html'"></img> -->
+      <button onclick="location.href='index.html'" id="home"></button>
+      <h1>핵융합</h1>
       <br />
-      <h3>반응식</h3>
-      <img style="width: 550px; max-width: 100%;" src="./img/1667889183060.jpg" />
- 
-    </div>
-  </div>
 
-  <footer>
-    <br /><br /><br /><br /><br />
-    <div style="
+      <canvas id="canvas" width="1600" height="900"> </canvas>
+
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        "
+      >
+        <p>결손된 질량 :</p>
+        <input id="input" placeholder="m" type="number" />
+        <p>kg</p>
+        <button id="animateButton">실행</button>
+      </div>
+
+      <div style="display: flex; margin-top: 10px; justify-content: center">
+        <p id="calculatedText">E =</p>
+      </div>
+
+      <div id="description">
+        <p>
+          핵융합은 수소와 같은 서로 다른 두 개의 원자핵이 융합하는 현상을
+          말한다. 핵융합이 발생하면 발생 전후 질량차이에 의해 대량의 에너지가
+          방출하는데, 이는 아인슈타인의 질량 에너지 등가원리(E=mc²)으로 이 양을
+          계산할 수 있다. 이러한 핵융합 반응은 원자핵 간의 척력을 이겨낼 만큼의
+          힘이 외부에서 가해져야 하므로 일반적인 환경에서는 구현하기 힘들다.
+        </p>
+        <p>
+          핵융합 에너지를 얻기 위한 조건을 알아보자. 핵융합은 원자핵 간의
+          반응이므로 전자나 전자 구름이 거의 없는 플라스마 상태를 필요로 한다.
+          원자핵끼리의 반발력은 대체로 10keV 이상이므로 대략 1억도 이상의 고온이
+          되어야 한다. 핵융합도 핵자에 따라 필요 온도조건이 다른데, 그 중에서
+          가장 가능성이 높은 D-T 핵융합의 연구가 전세계적으로 활발하게
+          이루어지고 있다.
+        </p>
+        <p>
+          핵융합 장치로는 대표적으로 자기장을 이용한 장치와 관성을 이용한 핵융합
+          장치가 있다. 일반적으로 자기장을 이용한 핵융합 장치의 연구가 발전되어
+          있으며, 이를 토카막 장치라고 한다.
+        </p>
+        <br />
+        <h3>반응식</h3>
+        <img
+          style="width: 550px; max-width: 100%"
+          src="./img/1667889183060.jpg"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <br /><br /><br /><br /><br />
+      <div
+        style="
           width: 200px;
           height: 30px;
           display: flex;
           margin: 0 auto;
           justify-content: space-between;
-        ">
-      <a href="https://github.com/jcy1511/nuclear">
-        <h5>GitHub</h5>
-      </a><a href="https://www.instagram.com/cold_2ero/">
-        <h5>Instagram</h5>
-      </a><a href="mailto:jcy1511@gmail.com">
-        <h5>Email</h5>
-      </a>
-    </div>
+        "
+      >
+        <a href="https://github.com/jcy1511/nuclear">
+          <h5>GitHub</h5> </a
+        ><a href="https://www.instagram.com/cold_2ero/">
+          <h5>Instagram</h5> </a
+        ><a href="mailto:jcy1511@gmail.com">
+          <h5>Email</h5>
+        </a>
+      </div>
 
-    <h5>ⓒ 2022. 장찬영 all rights reserved.</h5>
-  </footer>
-</body>
-
+      <h5>ⓒ 2022. 장찬영 all rights reserved.</h5>
+    </footer>
+  </body>
 </html>

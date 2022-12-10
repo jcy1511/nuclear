@@ -64,7 +64,7 @@ function explode() {
 
   ctx.drawImage(nImg, x, 150 + 0.4 * (x - initial_x), 200, 200);
   ctx.drawImage(heImg, 700, 325, 200, 200);
-  
+
   ctx.drawImage(energyImg, 550, 570, 500, 200);
   ctx.drawImage(energy2Img, 550, 80, 500, 200);
 
