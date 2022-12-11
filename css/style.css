@@ -161,6 +161,11 @@ section h1 {
   position: fixed;
 }
 
+section h3 {
+  top: 170px;
+  position: fixed;
+}
+
 #polygon {
   height: 90%;
   position: absolute;
