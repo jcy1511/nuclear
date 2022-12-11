@@ -4,6 +4,12 @@ const ctx = canvas.getContext("2d");
 
 const animateButton = document.getElementById("animateButton");
 
+var heavynuclear0Img = new Image();
+heavynuclear0Img.onload = function () {
+  ctx.drawImage(heavynuclear0Img, 0, 0, 900, 900);
+};
+heavynuclear0Img.src = "/img/heavynuclear0.png";
+
 var heavynuclearImg = new Image();
 heavynuclearImg.onload = function () {
   ctx.drawImage(heavynuclearImg, 0, 0, 900, 900);
@@ -39,7 +45,7 @@ function animate() {
 
   ctx.drawImage(heavynuclearImg, 0, 0, 900, 900);
   ctx.drawImage(heImg, x, 440 - (x - initial_x) * 0.5, 200, 200);
-  ctx.drawImage(energy3Img, 0, 0, 900, 900);
+  ctx.drawImage(energy3Img, 0, 0, 940, 880);
 
   x += 15;
 
