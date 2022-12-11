@@ -173,27 +173,27 @@ section h1 {
   max-width: 1024px;
 }
 
-#animateButton {
+.animateButton {
   background-color: #3c31dd;
   color: white;
   border: 0;
   border-radius: 10px;
   margin-left: 15px;
-  width: 50px;
-  height: 30px;
+  width: auto;
+  padding: 5px 10px;
   transform: scale(105%);
   transition: 0.3s;
   font-weight: bold;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#animateButton:hover {
+.animateButton:hover {
   background-color: black;
   color: white;
   transform: scale(100%);
 }
 
-#animateButton:active {
+.animateButton:active {
   transform: scale(95%);
 }
 
